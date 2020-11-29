@@ -1,0 +1,153 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+    background: rgb(85, 82, 82);
+    background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2012/02/07/1042/664ad5a167c6a4afb96dff64b839911d.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* object-position: center; */
+}
+.johnwick{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    margin: 2rem;
+    padding: 2rem;
+    /* animation: dog 5s ease-out infinite, john 2s forwards infinite; */
+/* border: black dotted 4px ; */
+   
+
+}
+
+.johnwick > div {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+}
+
+.johnwick .car1{
+    animation-delay: 2s;
+   
+     animation: dog 3s linear infinite  ;
+}
+.johnwick .car2{
+    
+    animation: movie 10s linear infinite;
+    
+}
+.johnwick .dog{
+    width: 50px;
+    height: 50px;
+    /* animation: john 5s ease-out infinite; */
+    animation: dog 10s linear infinite;
+    
+    
+    
+}
+.johnwick .city{
+    font-size: 100px;
+    
+    margin-left: 10px;
+    margin-top: 20px;
+    animation:city 10s linear infinite  ;
+  
+}
+.johnwick .tree{
+    bottom: 20px;
+    left: 50px;
+    font-size: 100px;
+    animation:tree 10s linear infinite  ;
+    
+    
+    
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+}
+.johnwick .tree:hover{
+    font-size: 150px;
+}
+.johnwick .police{
+    font-size: 100px;
+    animation: dog 15s linear infinite  ;
+}
+.johnwick .street{
+    font-size: 100px;
+    animation: city 3s ease infinite;
+}
+.johnwick .movie{
+    font-size: 100px;
+    animation: movie 5s linear infinite ;
+}
+
+
+@keyframes movie{
+    0%, 100%{
+        top: 0;
+        left:0;
+        /* right: 0; */
+    }
+    25%{
+        right: 1300px;
+        left: 100px;
+    }
+    50%{
+        right: 500px;
+        left: 300px;
+    }
+    75%{
+        right: 800px;
+        left: 800px;
+    }
+}
+@keyframes dog{
+    0%,100%{
+        left: 0;
+        right: 100px;
+        
+    }
+    50%{
+        left: 1400px;
+        right: 800px;
+        transition: linear;
+        transform-origin: center;
+    }
+}
+@keyframes city{
+    0%,100%{top: 100px;
+        left: 100px;
+        transform-origin: top;
+
+    }
+    25%{top: 1200px;
+        right: 800px;
+        
+    }
+    50%{
+        top: 300px;
+        bottom: 100px;
+    }
+}
+@keyframes tree{
+    0%,100%{
+        bottom: 2000px;
+        right: 1000px;
+    }
+    50%{
+        left: 1000px;
+        top: 1000px;
+    }
+}
+
